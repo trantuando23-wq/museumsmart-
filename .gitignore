@@ -31,6 +31,15 @@ docker-compose.override.yml
 # Build output
 frontend/dist/
 frontend/build/
+.next/
+frontend/.next/
+out/
+frontend/out/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
 
 # Logs
 *.log

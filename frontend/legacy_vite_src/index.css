@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap');
+
+:root {
+  /* Elegant Bright Museum Palette (Default: Light Mode) */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.88);
+  
+  --gold-primary: #b45309;
+  --gold-light: #d97706;
+  --gold-glow: rgba(217, 119, 6, 0.25);
+  --bronze: #92400e;
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #94a3b8;
+
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-gold: rgba(217, 119, 6, 0.35);
+
+  --accent-cyan: #0284c7;
+  --accent-emerald: #059669;
+  --accent-crimson: #e11d48;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --shadow-card: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-gold: 0 4px 14px rgba(217, 119, 6, 0.25);
+}
+
+[data-theme='dark'] {
+  --bg-primary: #0a0d14;
+  --bg-secondary: #131722;
+  --bg-card: rgba(23, 28, 43, 0.85);
+  --bg-glass: rgba(18, 24, 38, 0.75);
+  
+  --gold-primary: #e5a93b;
+  --gold-light: #f6cb65;
+  --gold-glow: rgba(229, 169, 59, 0.35);
+  --bronze: #c2884a;
+
+  --text-main: #f3f5f9;
+  --text-muted: #9ba3b5;
+  --text-dim: #647087;
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(229, 169, 59, 0.3);
+
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 4px 20px rgba(229, 169, 59, 0.35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+  user-select: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, .serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-primary);
+}
+
+/* Route Dash Animation for SVG Path */
+@keyframes dashAnimation {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.route-animated-path {
+  stroke-dasharray: 8 6;
+  animation: dashAnimation 1.2s linear infinite;
+}
+
+/* Pulse animation for node marker */
+@keyframes pulseMarker {
+  0% { transform: scale(0.95); opacity: 0.9; }
+  50% { transform: scale(1.15); opacity: 0.4; }
+  100% { transform: scale(0.95); opacity: 0.9; }
+}
+
+.node-pulse {
+  animation: pulseMarker 2s ease-in-out infinite;
+  transform-origin: center;
+}

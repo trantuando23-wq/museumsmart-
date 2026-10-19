@@ -2,58 +2,233 @@
   "artifacts": [
     {
       "id": 1,
+      "code": "A01",
       "name": "Trống đồng Đông Sơn",
-      "description": "Trống đồng Đông Sơn là biểu tượng văn hóa Việt Nam, có niên đại khoảng 2000-2500 năm.",
+      "description": "Trống đồng Đông Sơn là bảo vật quốc gia, biểu tượng thiêng liêng của nền văn minh lúa nước sông Hồng với niên đại rực rỡ hơn 2500 năm. Được tìm thấy tại Đông Sơn, Thanh Hóa năm 1924.",
+      "detailed_story": "Mặt trống đúc nổi hình ngôi sao 14 cánh ở trung tâm tượng trưng cho thần Mặt Trời. Bao quanh là các vành hoa văn hình học, hình chim Lạc sải cánh bay và cảnh sinh hoạt lễ hội giã gạo, múa hát, chèo thuyền chiến đấu của cư dân cổ thời kỳ các Vua Hùng. Âm thanh trống vang như tiếng sấm, được dùng trong các nghi lễ cầu mưa, cầu mùa màng bội thu.",
       "era": "Văn hóa Đông Sơn",
       "year": -500,
       "category": "Đồ đồng",
-      "location": "Phòng trưng bày A1",
+      "location": "Gian chính - Tầng 1 (Phòng A1)",
+      "room_code": "A1",
+      "node_id": "N_A1",
+      "material": "Đồng đỏ pha thiếc",
+      "dimensions": "Đường kính 79cm, Chiều cao 63cm, Trọng lượng 86kg",
       "image_url": "/images/trong-dong.jpg",
-      "is_featured": true
+      "is_featured": true,
+      "suggested_questions": [
+        "Hiện vật này dùng để làm gì trong nghi lễ cổ?",
+        "Ý nghĩa hình tượng mặt trời và chim Lạc trên mặt trống?",
+        "Kỹ thuật đúc đồng tinh xảo thời Đông Sơn có gì đặc biệt?"
+      ],
+      "model_type": "bronze_drum"
     },
     {
       "id": 2,
+      "code": "A02",
       "name": "Ấn vàng Sắc mệnh chi bảo",
-      "description": "Ấn vàng triều Nguyễn, được đúc năm 1827 dưới triều vua Minh Mạng.",
+      "description": "Bảo ấn hoàng gia triều Nguyễn bằng vàng ròng 10 tuổi (8.3 kg), biểu trưng tối cao cho quyền uy thiên tử và hiệu lệnh triều đình, đúc năm Minh Mạng thứ 8 (1827).",
+      "detailed_story": "Quai ấn đúc hình rồng cuộn đứng, đầu ngẩng cao, hai sừng dài, đuôi uốn 7 khúc. Mặt ấn đúc nổi bốn chữ triện 'Sắc mệnh chi bảo', dùng đóng trên các chiếu chỉ, sắc phong quan chức và thần linh trên cả nước dưới thời vua Minh Mạng. Bảo ấn từng thất lạc nhiều thập kỷ và được hồi hương năm 2023.",
       "era": "Triều Nguyễn",
       "year": 1827,
       "category": "Cổ vật hoàng gia",
-      "location": "Phòng trưng bày B2",
+      "location": "Phòng trưng bày Hoàng Triều (Phòng B2)",
+      "room_code": "B2",
+      "node_id": "N_B2",
+      "material": "Vàng ròng 10 tuổi (8.3 kg)",
+      "dimensions": "14cm x 14cm x 11cm",
       "image_url": "/images/an-vang.jpg",
-      "is_featured": true
+      "is_featured": true,
+      "suggested_questions": [
+        "Ấn vàng Sắc mệnh chi bảo được dùng trong những dịp nào?",
+        "Quai rồng trên ấn vàng thể hiện phong cách mỹ thuật gì?",
+        "Lịch sử thất lạc và hành trình hồi hương của các bảo ấn triều Nguyễn?"
+      ],
+      "model_type": "golden_seal"
     },
     {
       "id": 3,
+      "code": "A03",
       "name": "Tượng Phật Quan Âm nghìn mắt nghìn tay",
-      "description": "Tượng gỗ sơn son thếp vàng, tác phẩm điêu khắc nổi tiếng thời Lê Trung Hưng.",
+      "description": "Kiệt tác đỉnh cao của nghệ thuật điêu khắc gỗ cổ truyền Việt Nam thế kỷ 17 thời Lê Trung Hưng (Chùa Bút Tháp, Bắc Ninh).",
+      "detailed_story": "Tượng có 11 khuôn mặt hiền từ, 42 cánh tay lớn kết thủ ấn trì tụng và 952 cánh tay nhỏ tạo thành vầng hào quang rực rỡ phía sau, lòng bàn tay mỗi ngọn đều có một con mắt trí tuệ soi thấu nhân gian để cứu độ chúng sinh. Nghệ nhân Trương Thọ Nam tạc năm 1656.",
       "era": "Thời Lê Trung Hưng",
       "year": 1656,
       "category": "Điêu khắc",
-      "location": "Phòng trưng bày C1",
+      "location": "Phòng Mỹ thuật Phật giáo (Phòng C1)",
+      "room_code": "C1",
+      "node_id": "N_C1",
+      "material": "Gỗ mít sơn son thếp vàng",
+      "dimensions": "Chiều cao 3.7m (tính cả đài sen)",
       "image_url": "/images/quan-am.jpg",
-      "is_featured": false
+      "is_featured": true,
+      "suggested_questions": [
+        "Ý nghĩa triết lý của nghìn mắt nghìn tay trong Phật giáo?",
+        "Chất liệu gỗ mít và kỹ thuật sơn son thếp vàng cổ truyền?",
+        "Nghệ nhân Trương Thọ Nam đã sáng tác bức tượng này như thế nào?"
+      ],
+      "model_type": "buddha_statue"
     },
     {
       "id": 4,
-      "name": "Bình gốm hoa lam",
-      "description": "Bình gốm hoa lam thời Lê sơ, trang trí hoa văn rồng phượng tinh xảo.",
+      "code": "A04",
+      "name": "Bình gốm hoa lam vẽ thiên nga",
+      "description": "Tuyệt phẩm gốm Chu Đậu thời Lê sơ thế kỷ 15, minh chứng cho thời kỳ hoàng kim xuất khẩu gốm Việt Nam ra thế giới theo con đường tơ lụa.",
+      "detailed_story": "Bình có dáng củ tỏi cân đối, men tro trấu tự nhiên đặc trưng. Thân bình vẽ lam cobalt cảnh bốn con thiên nga trong đầm sen với bốn tư thế sinh động: vỗ cánh bay, lặn tìm mồi, rỉa lông và ngoảnh đầu gọi bạn. Bình được tìm thấy trong tàu đắm Cù Lao Chàm.",
       "era": "Thời Lê sơ",
       "year": 1450,
       "category": "Gốm sứ",
-      "location": "Phòng trưng bày D3",
+      "location": "Khu trưng bày Con đường Tơ lụa (Phòng D3)",
+      "room_code": "D3",
+      "node_id": "N_D3",
+      "material": "Gốm men lam cao cấp Chu Đậu",
+      "dimensions": "Cao 56.5cm, Bụng rộng 38cm",
       "image_url": "/images/binh-gom.jpg",
-      "is_featured": true
+      "is_featured": true,
+      "suggested_questions": [
+        "Vì sao gốm hoa lam Chu Đậu lại nổi tiếng khắp thế giới?",
+        "Ý nghĩa biểu tượng hoa sen và đàn thiên nga trên thân bình?",
+        "Điểm khác biệt giữa gốm lam Việt Nam và gốm Cảnh Đức Trấn?"
+      ],
+      "model_type": "blue_white_vase"
     },
     {
       "id": 5,
-      "name": "Mũ quan triều Nguyễn",
-      "description": "Mũ quan văn nhất phẩm triều Nguyễn, được trang trí bằng vàng và đá quý.",
+      "code": "A05",
+      "name": "Mũ quan nhất phẩm Triều Nguyễn",
+      "description": "Hiện vật trang phục cung đình nguyên vẹn quý hiếm, phản ánh hệ thống phẩm hàm và mỹ nghệ kim hoàn đỉnh cao của thợ thủ công cung đình Huế.",
+      "detailed_story": "Mũ được chế tác bằng khung lông đuôi ngựa đan mắt cáo tinh vi, phủ sơn then, đính các hoa văn rồng mây bằng vàng ròng khảm san hô đỏ và ngọc trai thiên nhiên dành riêng cho đại thần nhất phẩm thiết triều. Đây là bộ triều phục duy nhất còn nguyên vẹn.",
       "era": "Triều Nguyễn",
       "year": 1850,
-      "category": "Trang phục",
-      "location": "Phòng trưng bày B3",
+      "category": "Trang phục hoàng gia",
+      "location": "Phòng trưng bày Lễ nghi Cung đình (Phòng B3)",
+      "room_code": "B3",
+      "node_id": "N_B3",
+      "material": "Vàng chạm lộng, ngọc trai, lông đuôi ngựa",
+      "dimensions": "Cao 22cm, Đường kính vòng đầu 19cm",
       "image_url": "/images/mu-quan.jpg",
-      "is_featured": false
+      "is_featured": false,
+      "suggested_questions": [
+        "Quy định phẩm cấp mũ mão triều phục thời Nguyễn như thế nào?",
+        "Kỹ thuật đan lông đuôi ngựa và chạm vàng cung đình ra sao?",
+        "Làm thế nào để bảo quản một chiếc mũ cổ hơn 170 năm tuổi?"
+      ],
+      "model_type": "court_hat"
+    },
+    {
+      "id": 6,
+      "code": "A06",
+      "name": "Kiếm vàng Thuận Thiên - Lê Lợi",
+      "description": "Bảo kiếm huyền thoại thời Lê sơ, tương truyền là thanh kiếm Thuận Thiên mà Rùa Vàng Hồ Tây đã trao cho nghĩa quân Lam Sơn, đúc bằng vàng và bạch kim.",
+      "detailed_story": "Kiếm dài 1.2m, lưỡi kiếm bằng thép đặc biệt cứng chắc, cán kiếm bọc vàng ròng, đính ngọc bích và hồng ngọc. Thân kiếm khắc dòng chữ 'Thuận Thiên' (Thuận ý trời). Sau khi Lê Lợi đánh đuổi quân Minh, Rùa Vàng đã đòi lại kiếm ở Hồ Hoàn Kiếm (Hà Nội).",
+      "era": "Thời Lê sơ",
+      "year": 1428,
+      "category": "Vũ khí hoàng gia",
+      "location": "Phòng Anh hùng Dân tộc (Phòng E1)",
+      "room_code": "E1",
+      "node_id": "N_E1",
+      "material": "Thép đặc biệt, cán vàng, ngọc bích, hồng ngọc",
+      "dimensions": "Dài 120cm, Lưỡi rộng 4.5cm, Nặng 2.1kg",
+      "image_url": "/images/kiem-vang.jpg",
+      "is_featured": true,
+      "suggested_questions": [
+        "Truyền thuyết kiếm Thuận Thiên gắn với lịch sử chống Minh như thế nào?",
+        "Kỹ thuật luyện thép và dát vàng cán kiếm thời Lê sơ ra sao?",
+        "Vì sao Hồ Hoàn Kiếm (Hồ Tây) lại có tên liên quan đến bảo kiếm này?"
+      ],
+      "model_type": "sword"
+    },
+    {
+      "id": 7,
+      "code": "A07",
+      "name": "Chuông Đại Hồng Chung Thiên Mụ",
+      "description": "Đại hồng chung đồng khổng lồ đúc năm 1710 dưới thời chúa Nguyễn Phúc Chu, cao 2.5m, nặng 2.052 kg, tiếng chuông vang xa hàng km trên sông Hương.",
+      "detailed_story": "Chuông được đúc tại Huế theo lệnh chúa Nguyễn Phúc Chu. Thân chuông khắc bài minh văn bằng chữ Hán 1.640 chữ, ghi lại lịch sử dựng chùa và lòng cầu bình an của chúa. Tiếng chuông ngân vang bổng trầm mỗi sáng sớm và chiều tối như lời nhắc nhở chúng sinh hướng thiện.",
+      "era": "Chúa Nguyễn",
+      "year": 1710,
+      "category": "Đồ đồng",
+      "location": "Nhà trưng bày Phật Giáo (Phòng C2)",
+      "room_code": "C2",
+      "node_id": "N_C2",
+      "material": "Đồng đỏ cao cấp",
+      "dimensions": "Cao 2.5m, Đường kính miệng 1.4m, Nặng 2.052kg",
+      "image_url": "/images/chuong-dong.jpg",
+      "is_featured": true,
+      "suggested_questions": [
+        "Chuông Thiên Mụ có ý nghĩa lịch sử và tâm linh gì với xứ Huế?",
+        "Kỹ thuật đúc đồng cổ Việt Nam đạt đỉnh cao như thế nào?",
+        "Bài minh văn 1.640 chữ trên chuông ghi chép những gì?"
+      ],
+      "model_type": "bell"
+    },
+    {
+      "id": 8,
+      "code": "A08",
+      "name": "Ngọc ấn Hoàng đế Chi bảo",
+      "description": "Ngọc ấn quý giá nhất triều Nguyễn, làm từ ngọc bích xanh nguyên khối, đúc dưới thời vua Minh Mạng, biểu tượng của thiên tử Đại Việt.",
+      "detailed_story": "Ngọc ấn khắc từ một khối ngọc bích xanh nguyên vẹn từ Miến Điện. Quai ấn tạc hình rồng 5 móng quý tộc. Mặt ấn in dòng chữ triện 'Hoàng đế Chi bảo'. Kích thước lớn hơn nhiều so với ấn vàng, chỉ dùng cho văn bản ngoại giao và chiếu thư đặc biệt nhất của triều đình.",
+      "era": "Triều Nguyễn",
+      "year": 1823,
+      "category": "Cổ vật hoàng gia",
+      "location": "Phòng trưng bày Hoàng Triều (Phòng B2)",
+      "room_code": "B2",
+      "node_id": "N_B2",
+      "material": "Ngọc bích xanh nguyên khối Miến Điện",
+      "dimensions": "13.8cm x 13.8cm x 9.9cm, Nặng 6.8kg",
+      "image_url": "/images/ngoc-an.jpg",
+      "is_featured": false,
+      "suggested_questions": [
+        "Sự khác biệt giữa ngọc ấn và ấn vàng trong nghi lễ triều đình?",
+        "Ngọc bích Miến Điện được vận chuyển về Huế như thế nào?",
+        "Hành trình ly tán và hồi hương của ngọc ấn qua các thời kỳ lịch sử?"
+      ],
+      "model_type": "jade_seal"
+    },
+    {
+      "id": 9,
+      "code": "A09",
+      "name": "Tượng Vũ nữ Chăm Pa múa Apsara",
+      "description": "Tuyệt tác điêu khắc đá sa thạch hồng vương quốc Chăm Pa thế kỷ 10 từ di tích Mỹ Sơn, UNESCO công nhận di sản thế giới.",
+      "detailed_story": "Tượng vũ nữ Apsara tư thế múa Tribhanga (uốn 3 chỗ) đặc trưng nghệ thuật Chăm. Ngực đầy, hông nở, thắt lưng nhỏ, đeo vòng cổ và vòng chân trang trí tinh vi. Đây là biểu tượng của cái đẹp thiên thần trong tín ngưỡng Hindu-Phật giáo Chăm Pa.",
+      "era": "Vương quốc Chăm Pa",
+      "year": 950,
+      "category": "Điêu khắc",
+      "location": "Phòng Văn minh Chăm Pa (Phòng F1)",
+      "room_code": "F1",
+      "node_id": "N_F1",
+      "material": "Đá sa thạch hồng",
+      "dimensions": "Cao 1.1m, Rộng 0.45m",
+      "image_url": "/images/tuong-cham.jpg",
+      "is_featured": true,
+      "suggested_questions": [
+        "Văn minh Chăm Pa và nghệ thuật điêu khắc đá sa thạch có gì đặc sắc?",
+        "Vũ nữ Apsara trong tín ngưỡng Hindu có ý nghĩa gì?",
+        "Di tích Mỹ Sơn được UNESCO công nhận vì những giá trị nào?"
+      ],
+      "model_type": "apsara_statue"
+    },
+    {
+      "id": 10,
+      "code": "A10",
+      "name": "Rồng đất nung Hoàng Thành Thăng Long",
+      "description": "Rồng đất nung trang trí nóc Điện Kính Thiên thời Lê sơ thế kỷ 15, biểu tượng quyền lực tối thượng của Hoàng đế Đại Việt tại kinh đô Thăng Long.",
+      "detailed_story": "Rồng được tạo hình uốn lượn uyển chuyển theo phong cách Lê sơ đặc trưng: thân dài, đầu to, sừng ngắn, mào lửa, vảy rõ nét. Đây là mảnh ghép của con rồng khổng lồ dài hơn 5m trang trí trên mái ngói Điện Kính Thiên - nơi vua thiết triều hàng ngày tại Thăng Long.",
+      "era": "Thời Lê sơ",
+      "year": 1428,
+      "category": "Kiến trúc cổ",
+      "location": "Phòng Thăng Long Kinh Thành (Phòng G1)",
+      "room_code": "G1",
+      "node_id": "N_G1",
+      "material": "Đất nung men xanh lục, men vàng",
+      "dimensions": "Dài 1.8m, Cao 0.65m",
+      "image_url": "/images/rong-dat-nung.jpg",
+      "is_featured": false,
+      "suggested_questions": [
+        "Hình tượng rồng Lê sơ khác rồng thời Lý - Trần ở điểm nào?",
+        "Hoàng Thành Thăng Long có những công trình kiến trúc nào đặc sắc?",
+        "Kỹ thuật đất nung và men xanh lục thời Lê sơ được làm như thế nào?"
+      ],
+      "model_type": "dragon_terracotta"
     }
   ]
 }
