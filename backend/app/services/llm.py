@@ -342,19 +342,155 @@ def synthesize_smart_answer(question: str, contexts: List[str], sources: List[Ar
                 f"Bạn muốn khám phá khía cạnh nào trước?"
             )
         return (
-            "Xin chào quý khách! Tôi là Hướng dẫn viên AI của Bảo tàng Lịch sử Thông minh. "
+            "Xin chào quý khách! Tôi là Tiến sĩ Di sản, Thuyết minh viên của Bảo tàng Lịch sử Thông minh. "
             "Tôi có thể thuyết minh chi tiết cho bạn về 10 Bảo vật Quốc gia, ý nghĩa hoa văn, kỹ thuật đúc cổ truyền và chỉ đường 3D trực tiếp trong bảo tàng. "
             "Bạn đang quan tâm đến hiện vật nào hôm nay?"
         )
 
+    # 1.1 Câu hỏi toàn bảo tàng / so sánh liên hiện vật
+    if has_keywords(q_norm, ['bao nhieu mon', 'bao nhieu do co', 'co may mon', 'danh sach bao vat', 'tat ca hien vat']):
+        return (
+            "Hiện tại gian trưng bày 3D tương tác của bảo tàng sở hữu **10 Bảo vật Quốc gia đỉnh cao**:\n"
+            "1. 🪘 **Trống đồng Đông Sơn** (A01 - 2.500 năm tuổi)\n"
+            "2. 👑 **Ấn vàng Sắc mệnh chi bảo** (A02 - Triều Nguyễn 1827)\n"
+            "3. 🪷 **Tượng Phật Quan Âm nghìn mắt nghìn tay** (A03 - Chùa Bút Tháp 1656)\n"
+            "4. 🏺 **Bình gốm hoa lam Chu Đậu** (A04 - Tàu đắm Cù Lao Chàm thế kỷ 15)\n"
+            "5. 🎩 **Mũ quan nhất phẩm triều Nguyễn** (A05 - Đan lông đuôi ngựa đính rồng phượng vàng)\n"
+            "6. ⚔️ **Kiếm Thuận Thiên** (A06 - Vua Lê Lợi & huyền tích Hồ Hoàn Kiếm)\n"
+            "7. 🔔 **Đại Hồng Chung chùa Thiên Mụ** (A07 - Nặng hơn 2 tấn đồng đỏ năm 1710)\n"
+            "8. 🟩 **Ấn ngọc Hoàng đế chi bảo** (A08 - Ngọc bích nguyên khối 6.8kg)\n"
+            "9. 💃 **Tượng vũ nữ Apsara Champa** (A09 - Sa thạch hồng thế kỷ 10)\n"
+            "10. 🐉 **Đầu rồng thời Lý đất nung** (A10 - Mái điện Kính Thiên Thăng Long)\n\n"
+            "💡 *Bạn muốn tìm hiểu sâu về bảo vật nào trước?*"
+        )
+
+    if has_keywords(q_norm, ['nang nhat', 'khoi luong lon nhat', 'to nhat']):
+        return (
+            "Hiện vật nặng nhất trong bảo tàng là **Đại Hồng Chung chùa Thiên Mụ (A07)** với khối lượng lên tới "
+            "**2.052 kg (hơn 2 tấn đồng đỏ nguyên khối)** đúc năm 1710 thời Chúa Nguyễn Phúc Chu.\n\n"
+            "💡 *Hiện vật nặng thứ hai là Trống đồng Đông Sơn (86 kg), tiếp đến là Tượng vũ nữ Apsara (65 kg).*"
+        )
+
+    if has_keywords(q_norm, ['lau doi nhat', 'co nhat', 'gia nhat', 'nhieu tuoi nhat']):
+        return (
+            "Hiện vật cổ xưa nhất là **Trống đồng Đông Sơn (A01)**, có niên đại cách ngày nay khoảng **2.500 năm** "
+            "(khoảng thế kỷ V đến III TCN) thuộc thời đại Hùng Vương dựng nước."
+        )
+
+    if has_keywords(q_norm, ['bang vang', 'chat lieu vang', 'co vang khong']):
+        return (
+            "Có 3 bảo vật gắn liền với vàng ròng nguyên chất:\n"
+            "1. 👑 **Ấn vàng Sắc mệnh chi bảo (A02):** Đúc từ **8.38 kg vàng ròng 10 tuổi** năm 1827.\n"
+            "2. 🎩 **Mũ quan nhất phẩm (A05):** Đính **4 rồng vàng và 4 chim phượng bằng vàng ròng** dát mỏng.\n"
+            "3. ⚔️ **Kiếm Thuận Thiên (A06):** Chuôi kiếm được **bọc vàng ròng chạm rồng cuộn ôm ngọc**."
+        )
+
+    if has_keywords(q_norm, ['bang ngoc', 'chat lieu ngoc', 'ngoc bich']):
+        return (
+            "Hiện vật bằng ngọc quý hiếm nhất là **Ấn ngọc Hoàng đế chi bảo (A08)**, được tạc từ một khối "
+            "**ngọc bích Imperial Jadeite tự nhiên nguyên khối nặng 6.8 kg**, màu xanh lục bảo trong vắt tuyệt mỹ."
+        )
+
+    if has_keywords(q_norm, ['duoi bien', 'truc vot', 'tau dam']):
+        return (
+            "Hiện vật kỳ diệu được trục vớt từ đáy biển là **Bình gốm hoa lam Chu Đậu (A04)**, nằm trong con tàu đắm cổ "
+            "thế kỷ 15 tại vùng biển Cù Lao Chàm (Hội An). Lớp men lam vẫn sáng bóng nguyên vẹn suốt 500 năm ngâm trong nước biển."
+        )
+
     # Nếu có bảo vật cụ thể trong kho tri thức
     if knowledge:
+        # 1.2 Câu hỏi chi tiết về từng biểu tượng đặc thù
+        if has_keywords(q_norm, ['con coc', 'coc', 'cau mua']):
+            return (
+                f"**Về hình tượng 4 con cóc trên {knowledge['name']}:**\n\n"
+                "Trong tín ngưỡng nông nghiệp lúa nước Lạc Việt, con cóc là linh vật cầu mưa ('Con cóc là cậu ông Trời'). "
+                "Bốn khối tượng cóc đúc nổi ngồi quay ngược chiều kim đồng hồ tượng trưng cho chu kỳ 4 mùa và ước vọng mưa thuận gió hòa."
+            )
+
+        if has_keywords(q_norm, ['ngoi sao', '14 canh', 'mat troi']):
+            return (
+                f"**Về ngôi sao 14 cánh trên {knowledge['name']}:**\n\n"
+                "Ngôi sao 14 cánh ở tâm mặt trống là biểu tượng tối cao của **Thần Mặt Trời** – nguồn cội sự sống trong nền văn minh nông nghiệp. "
+                "14 cánh sao đại diện cho các tiết khí và tuần hoàn thời gian trong năm."
+            )
+
+        if has_keywords(q_norm, ['chim lac', 'totem']):
+            return (
+                f"**Về đồ án chim Lạc trên {knowledge['name']}:**\n\n"
+                "Đoàn chim Lạc dang rộng sải cánh bay ngược chiều kim đồng hồ theo chu kỳ mặt trời. "
+                "Chim Lạc là vật tổ thiêng liêng của cư dân Văn Lang, biểu trưng cho khát vọng vươn cao và sự trường tồn của nòi giống."
+            )
+
+        if has_keywords(q_norm, ['chu khac', 'chu trien', 'day an']):
+            return (
+                f"**Về chữ khắc trên {knowledge['name']}:**\n\n"
+                "Mặt dưới đáy ấn khắc nổi 4 chữ Triện thư cổ: **'Sắc Mệnh Chi Bảo'** (敕命之寶) với đường nét vuông vức, "
+                "dày dặn và trang nghiêm, thể hiện uy quyền tối cao của chiếu mệnh hoàng gia."
+            )
+
+        if has_keywords(q_norm, ['5 mong', 'nam mong', 'tai sao 5 mong']):
+            return (
+                f"**Về hình tượng rồng 5 móng trên {knowledge['name']}:**\n\n"
+                "Trong điển chế triều Nguyễn, hình tượng **Rồng 5 móng** là độc quyền tuyệt đối chỉ dành riêng cho **Hoàng đế (Thiên tử)**. "
+                "Quan lại và hoàng thân chỉ được phép dùng rồng 4 móng hoặc hình tượng Giao long, Kỳ lân."
+            )
+
+        if has_keywords(q_norm, ['bao nhieu tay', 'bao nhieu mat', 'so tay', 'so mat']):
+            return (
+                f"**Về số lượng tay và mắt trên {knowledge['name']}:**\n\n"
+                "Tượng có tổng cộng **42 cánh tay lớn** kết ấn và cầm pháp bảo, cùng **952 cánh tay nhỏ** tỏa ra phía sau tạo thành vầng thái dương hào quang. "
+                "Trong mỗi lòng bàn tay đều có một con mắt tuệ nhãn, tổng cộng lên tới **994 cánh tay mang mắt**!\n\n"
+                "Ý nghĩa: 'Nghìn mắt nhìn thấu nỗi thống khổ của chúng sinh, nghìn tay dang rộng kịp thời cứu vớt muôn loài'."
+            )
+
+        if has_keywords(q_norm, ['thien nga', 've hinh gi']):
+            return (
+                f"**Về hình vẽ thiên nga trên {knowledge['name']}:**\n\n"
+                "Thân bình vẽ hình đôi chim thiên nga sải cánh bay giữa làn mây trắng bằng màu men lam cô-ban trầm ấm. "
+                "Nét vẽ phóng khoáng nét thanh nét đậm như tranh thủy mặc, biểu tượng cho tình yêu chung thủy và khát vọng thanh cao."
+            )
+
+        if has_keywords(q_norm, ['canh chuon', 'tai sao co canh chuon']):
+            return (
+                f"**Về đôi cánh chuồn trên {knowledge['name']}:**\n\n"
+                "Hai cánh chuồn phía sau xòe rộng 38cm, khung viền bọc kim loại cứng cáp và đan chỉ vàng óng ánh. "
+                "Cánh chuồn dang ngang giúp giữ thăng bằng và tôn lên phong thái đĩnh đạc, cẩn trọng của bậc đại thần khi đại triều."
+            )
+
+        if has_keywords(q_norm, ['bo lao', 'con bo lao']):
+            return (
+                f"**Về quai chuông hình con Bồ Lao trên {knowledge['name']}:**\n\n"
+                "Bồ Lao là linh thú rồng biển trong thần thoại rất sợ cá kình; mỗi khi bị cá kình đuổi thì gầm to vang dội như sấm. "
+                "Cổ nhân đúc Bồ Lao làm quai chuông để tiếng chuông ngân vang xa hàng chục dặm giữa mây nước sông Hương."
+            )
+
+        if has_keywords(q_norm, ['thoai vi', '1945', 'bao dai']):
+            return (
+                f"**Về sự kiện thoái vị lịch sử năm 1945 gắn với {knowledge['name']}:**\n\n"
+                "Chiều ngày 30/8/1945 tại lầu Ngọ Môn Huế, Vua Bảo Đại đã trao ấn ngọc này cùng kiếm báu cho phái đoàn Chính phủ Cách mạng Lâm thời, "
+                "tuyên bố: 'Trẫm thà làm dân một nước độc lập hơn làm vua một nước nô lệ', chính thức chấm dứt chế độ phong kiến nghìn năm."
+            )
+
+        if has_keywords(q_norm, ['dieu mua', 'tribhanga', 'uon ba khuc']):
+            return (
+                f"**Về điệu múa Tribhanga của {knowledge['name']}:**\n\n"
+                "Tượng thể hiện tư thế múa kinh điển Tribhanga (uốn ba khúc): Cổ nghiêng một bên, ngực nở, eo thon thắt đáy lưng ong và hông nở lắc nhẹ. "
+                "Nghệ nhân Champa đã biến chất đá sa thạch thô cứng thành những đường cong mềm mại tựa da thịt sống động."
+            )
+
+        if has_keywords(q_norm, ['ngam ngoc', 'minh chau']):
+            return (
+                f"**Về miệng rồng ngậm ngọc trên {knowledge['name']}:**\n\n"
+                "Đầu rồng thời Lý há rộng ngậm viên minh châu sáng ngời, biểu tượng cho trí tuệ giác ngộ của Phật pháp và tinh thần nhân nghĩa, "
+                "thanh thoát của vương triều nhà Lý."
+            )
+
         # 2. Kỹ thuật chế tác, chất liệu, đúc đồng, lò nung, dát vàng (ưu tiên nếu hỏi về kỹ thuật)
         if has_keywords(q_norm, ['ky thuat', 'che tac', 'luyen kim', 'duc', 'khuon', 'chat lieu', 'lam bang gi', 'vang rong', 'go mit', 'men', 'nung', 'ren']):
             return f"**Về kỹ thuật chế tác đỉnh cao của {knowledge['name']}:**\n\n{knowledge['crafting']}\n\nĐộ tinh xảo này là minh chứng cho trình độ bậc thầy của tiền nhân thời bấy giờ."
 
         # 3. Hoa văn, họa tiết, biểu tượng, ý nghĩa hình tượng
-        if has_keywords(q_norm, ['hoa van', 'hoa tiet', 'bieu tuong', 'y nghia', 'con coc', 'mat troi', 'chim lac', 'rong', 'num an', 'chu trien', 'thien nga', 'canh tay']):
+        if has_keywords(q_norm, ['hoa van', 'hoa tiet', 'bieu tuong', 'y nghia', 'num an', 'thien nga', 'canh tay']):
             return f"**Về ý nghĩa hoa văn & biểu tượng của {knowledge['name']}:**\n\n{knowledge['motif']}\n\n💡 Bạn có thể bật chế độ xoay 3D để quan sát các chi tiết đồ án này cận cảnh!"
 
         # 4. Điển tích, truyền thuyết, sự tích, công dụng, dùng làm gì
