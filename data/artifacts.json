@@ -1,0 +1,59 @@
+{
+  "artifacts": [
+    {
+      "id": 1,
+      "name": "Trống đồng Đông Sơn",
+      "description": "Trống đồng Đông Sơn là biểu tượng văn hóa Việt Nam, có niên đại khoảng 2000-2500 năm.",
+      "era": "Văn hóa Đông Sơn",
+      "year": -500,
+      "category": "Đồ đồng",
+      "location": "Phòng trưng bày A1",
+      "image_url": "/images/trong-dong.jpg",
+      "is_featured": true
+    },
+    {
+      "id": 2,
+      "name": "Ấn vàng Sắc mệnh chi bảo",
+      "description": "Ấn vàng triều Nguyễn, được đúc năm 1827 dưới triều vua Minh Mạng.",
+      "era": "Triều Nguyễn",
+      "year": 1827,
+      "category": "Cổ vật hoàng gia",
+      "location": "Phòng trưng bày B2",
+      "image_url": "/images/an-vang.jpg",
+      "is_featured": true
+    },
+    {
+      "id": 3,
+      "name": "Tượng Phật Quan Âm nghìn mắt nghìn tay",
+      "description": "Tượng gỗ sơn son thếp vàng, tác phẩm điêu khắc nổi tiếng thời Lê Trung Hưng.",
+      "era": "Thời Lê Trung Hưng",
+      "year": 1656,
+      "category": "Điêu khắc",
+      "location": "Phòng trưng bày C1",
+      "image_url": "/images/quan-am.jpg",
+      "is_featured": false
+    },
+    {
+      "id": 4,
+      "name": "Bình gốm hoa lam",
+      "description": "Bình gốm hoa lam thời Lê sơ, trang trí hoa văn rồng phượng tinh xảo.",
+      "era": "Thời Lê sơ",
+      "year": 1450,
+      "category": "Gốm sứ",
+      "location": "Phòng trưng bày D3",
+      "image_url": "/images/binh-gom.jpg",
+      "is_featured": true
+    },
+    {
+      "id": 5,
+      "name": "Mũ quan triều Nguyễn",
+      "description": "Mũ quan văn nhất phẩm triều Nguyễn, được trang trí bằng vàng và đá quý.",
+      "era": "Triều Nguyễn",
+      "year": 1850,
+      "category": "Trang phục",
+      "location": "Phòng trưng bày B3",
+      "image_url": "/images/mu-quan.jpg",
+      "is_featured": false
+    }
+  ]
+}
